@@ -1,8 +1,11 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/UserCard";
+import { DefauleLayout } from "./components/templetes/DefaultLayout";
+import { HeaderOnly } from "./components/templetes/HeaderOnly";
 import "./styles.css";
 
 const user = {
@@ -18,12 +21,14 @@ const user = {
 
 export const App = () => {
   return (
-    <div className="App">
-      <PrimaryButton>テスト</PrimaryButton>
-      <SecondaryButton>検索</SecondaryButton>
-      <br />
-      <SearchInput />
-      <UserCard user={user} />
-    </div>
+    <BrowserRouter>
+      <DefauleLayout>
+        <PrimaryButton>テスト</PrimaryButton>
+        <SecondaryButton>検索</SecondaryButton>
+        <br />
+        <SearchInput />
+        <UserCard user={user} />
+      </DefauleLayout>
+    </BrowserRouter>
   );
 };
