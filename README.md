@@ -1,2 +1,2 @@
-# Atom-Study
+# react-todo
 Created with CodeSandbox
