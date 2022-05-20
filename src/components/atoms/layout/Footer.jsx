@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 // Linkを利用する場合は、BrowzRouterで囲む必要があるため、App.jsで囲む。
 export const Footer = () => {

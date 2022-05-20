@@ -16,17 +16,6 @@ const users = [...Array(10).keys()].map((val) => {
   };
 });
 
-const user = {
-  image: "https://source.unsplash.com/ZRZSmK362Xw",
-  name: "muto",
-  email: "11111@aaa.com",
-  phone: "999-9999-9998",
-  company: {
-    name: "Sample"
-  },
-  website: "https://www.google.co.jp/"
-};
-
 export const Users = () => {
   return (
     <SContainer>
